@@ -26,7 +26,7 @@ export default function SnowParticles({
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const particlesRef = useRef<Particle[]>([]);
     const mouseRef = useRef({ x: 0, y: 0 });
-    const animationFrameRef = useRef<number>();
+    const animationFrameRef = useRef<number | null>(null);
 
     // Adjust count based on intensity
     const particleCount = {
