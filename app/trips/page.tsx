@@ -75,7 +75,7 @@ export default function TripsPage() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                    {trips.map((trip) => (
+                    {trips.map((trip, index) => (
                         <Link key={trip.id} href={`/trips/${trip.id}`} className="trip-card group block">
                             <div className="relative h-[400px] rounded-2xl overflow-hidden border border-white/10 transition-all duration-500 hover:scale-[1.02] hover:shadow-glow">
                                 {/* Background Image */}
